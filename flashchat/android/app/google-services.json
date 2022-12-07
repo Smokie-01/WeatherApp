@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "336956197080",
+    "project_id": "matrix-5e597",
+    "storage_bucket": "matrix-5e597.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336956197080:android:408e03a92d20ef80b3afad",
+        "android_client_info": {
+          "package_name": "com.Matrix.flashchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336956197080-62sfoabiqje4kgh38tij7pn2elcl9n63.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZGIxwFtgm2C_RUTqt48yPQUItMmKpCgY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336956197080-62sfoabiqje4kgh38tij7pn2elcl9n63.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
