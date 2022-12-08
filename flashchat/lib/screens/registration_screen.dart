@@ -63,15 +63,15 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 color: Colors.blueAccent,
                 text: 'Register',
                 onpressed: () async {
-                  // try {
-                  //   final newUser = await _auth.createUserWithEmailAndPassword(
-                  //       email: email, password: password);
-                  // if (newUser != null) {
+                   try {
+                    final newUser = await _auth.createUserWithEmailAndPassword(
+                         email: email, password: password);
+                  if (newUser != null) {
                   Navigator.pushNamed(context, ChatScreen.chatid);
-                  // }
-                  // } catch (e) {
-                  //   print(e);
-                  // }
+                   }
+                  } catch (e) {
+                     print(e);
+                  }
                 })
           ],
         ),
