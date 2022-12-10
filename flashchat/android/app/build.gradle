@@ -25,7 +25,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 apply plugin: 'com.google.gms.google-services'
-apply plugin: 'com.android.application'
+
 
 android {
     compileSdkVersion flutter.compileSdkVersion
@@ -46,8 +46,8 @@ android {
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.Matrix.flashchat"
-        minSdkVersion flutter.minSdkVersion
-        targetSdkVersion flutter.targetSdkVersion
+        minSdkVersion localProperties.getProperty('flutter.minSdkVersion')
+        targetSdkVersion localProperties.getProperty('flutter.targetSdkVersion')
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
