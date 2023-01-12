@@ -37,11 +37,13 @@ class _LoginScreenState extends State<LoginScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Hero(
-                tag: "logo",
-                child: Container(
-                  height: 200.0,
-                  child: Image.asset('images/logo.png'),
+              Flexible(
+                child: Hero(
+                  tag: "logo",
+                  child: Container(
+                    height: 200.0,
+                    child: Image.asset('images/logo.png'),
+                  ),
                 ),
               ),
               SizedBox(
@@ -78,12 +80,12 @@ class _LoginScreenState extends State<LoginScreen> {
                       final newUser = await _auth.signInWithEmailAndPassword(
                           email: email, password: password);
                       Navigator.pushNamed(context, ChatScreen.chatid);
-                      setState(() {
-                        loading = false;
-                      });
                     } catch (e) {
                       print(e);
                     }
+                    setState(() {
+                      loading = false;
+                    });
                   })
             ],
           ),
