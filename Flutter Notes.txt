@@ -1,0 +1,10 @@
+
+Flutter Inheritence (extends) :- When the child is Strongly(Logically) related to Parent Widget
+             Eg:- Parent Class (Mamal)
+                  Child Class  (Person)
+The both Parent and Child have Strong (Logical) Relation 
+
+Fluter Mixins (with):- When the child is not Strongly related to the Parent widget 
+             Eg:- Parent Class (Mamal)
+                  Child class (Agility)
+The both Parent and Child have weak Relation 
